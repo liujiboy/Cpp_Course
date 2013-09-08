@@ -6,6 +6,6 @@ def f(x):
 		return 1
 	else:
 		return 0
-for i in range(100,999):
+for i in range(100,1000):
 	if f(i)==1:
 		print i

@@ -1,0 +1,5 @@
+读取data.csv中的数据并且显示出来。
+但这个程序存在很多错误，根本无法正常运行。
+（1）loadMovie函数中movies数组的长度被固定为10，如果data.csv中的数据超过10行就无法处理了。
+（2）loadMovie函数中将movies数组作为返回值return，看起来是正确的。但事实上movies在return之后就将被销毁！因为movies数组是loadMovie的局部变量。局部变量在函数调用结束之后就要被销毁。
+
