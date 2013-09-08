@@ -6,3 +6,5 @@ mkdir:
 	-mkdir build
 run:   hello
 	./build/hello
+clean:
+	-rm -rf build
