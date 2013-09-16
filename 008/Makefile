@@ -10,6 +10,10 @@ test4: createdir Test4/Test4/main.cpp
 	g++ Test4/Test4/main.cpp -o build/Test4
 test5: createdir Test5/Test5/main.cpp
 	g++ Test5/Test5/main.cpp -o build/Test5
+test6: createdir Test6/Test6/main.cpp
+	g++ Test6/Test6/main.cpp -o build/Test6
+test7: createdir Test7/Test7/main.cpp
+	g++ Test7/Test7/main.cpp -o build/Test7
 run1:	test1
 	./build/Test1
 run2:	test2
@@ -20,6 +24,10 @@ run4:	test4
 	./build/Test4
 run5:	test5
 	./build/Test5
+run6:	test6
+	./build/Test6
+run7:	test7
+	./build/Test7
 createdir:
 	-mkdir build
 clean:
