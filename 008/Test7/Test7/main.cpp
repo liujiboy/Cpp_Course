@@ -18,9 +18,12 @@ void fun(int n,int** retVal)
 int main(int argc, const char * argv[])
 {
     int* a=NULL;
-    fun(10,&a);
+    int n;
+    cout<<"input length of array:";
+    cin>>n;
+    fun(n,&a);
     cout<<a<<endl;
-    for(int i=0;i<10;i++)
+    for(int i=0;i<n;i++)
         cout<<a[i]<<endl;
     return 0;
 }
