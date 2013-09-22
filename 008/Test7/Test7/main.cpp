@@ -25,5 +25,6 @@ int main(int argc, const char * argv[])
     cout<<a<<endl;
     for(int i=0;i<n;i++)
         cout<<a[i]<<endl;
+    delete []a;
     return 0;
 }
