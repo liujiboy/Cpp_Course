@@ -1,3 +1,2 @@
-读取data.csv中的数据并且显示出来。
-使用vector解决了所有问题
-
+make debug产生调试程序
+make release产生发布程序
