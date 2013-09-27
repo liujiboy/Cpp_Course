@@ -34,36 +34,49 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Test3/Test3/main.cpp"
-         timestampString = "401547282.022642"
+         timestampString = "401859591.750039"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "52"
-         endingLineNumber = "52">
+         startingLineNumber = "90"
+         endingLineNumber = "90">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Test3/Test3/main.cpp"
-         timestampString = "401547447.642812"
+         timestampString = "401859591.750039"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
+         startingLineNumber = "83"
+         endingLineNumber = "83"
          landmarkName = "main(int argc, const char * argv[])"
          landmarkType = "7">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Test3/Test3/main.cpp"
-         timestampString = "401547445.619532"
+         timestampString = "401859591.750039"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "19"
-         endingLineNumber = "19"
+         startingLineNumber = "23"
+         endingLineNumber = "23"
          landmarkName = "Point(float x=0,float y=0)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Test3/Test3/main.cpp"
+         timestampString = "401859591.750039"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "48"
+         endingLineNumber = "48"
+         landmarkName = "Triangle(const Point&amp;p1,const Point&amp;p2 ,const Point&amp;p3)"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

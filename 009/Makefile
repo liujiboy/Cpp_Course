@@ -1,4 +1,4 @@
-all:  test1 test2 test3 test4 test5
+all:  test1 test2 test3
 
 test1: createdir Test1/Test1/main.cpp
 	g++ Test1/Test1/main.cpp -o build/Test1
