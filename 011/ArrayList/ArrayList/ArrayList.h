@@ -9,6 +9,8 @@
 #ifndef ArrayList_ArrayList_h
 #define ArrayList_ArrayList_h
 #include<iostream>
+#include <stdexcept>
+#include <cstdlib>
 using namespace std;
 typedef int ElemType;
 class ArrayList

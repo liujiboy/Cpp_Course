@@ -43,9 +43,9 @@ int main(int argc, const char * argv[])
 		cout<<"l3:"<<l3<<endl;
 		l3.add(1,200);
 	}
-	catch (char* e)
+	catch (runtime_error& e)
 	{
-		cout<<"Exception："<<e<<endl;
+		cout<<"Exception："<<e.what()<<endl;
 	}
     return 0;
 }

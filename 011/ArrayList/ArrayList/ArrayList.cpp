@@ -18,8 +18,9 @@ ArrayList::ArrayList( const ArrayList&list )
 	elems=new ElemType[list.sizeOfAllocatedMemory];
 	sizeOfAllocatedMemory=list.sizeOfAllocatedMemory;
 	sizeOfElems=list.sizeOfElems;
-	for(int i=0;i<list.sizeOfElems;i++)
-		elems[i]=list.elems[i];
+	/*for(int i=0;i<list.sizeOfElems;i++)
+		elems[i]=list.elems[i];*/
+    memcpy(elems, list.elems, list.sizeOfElems*sizeof(ElemType));
 }
 ArrayList::~ArrayList(void)
 {
@@ -33,10 +34,11 @@ void ArrayList::reallocate()
 {
 	int newSizeOfAllocatedMemory=sizeOfAllocatedMemory+INC;
 	ElemType *newElems=new ElemType[newSizeOfAllocatedMemory];
-	for(int i=0;i<sizeOfElems;i++)
+	/*for(int i=0;i<sizeOfElems;i++)
 	{
 		newElems[i]=elems[i];
-	}
+	}*/
+    memcpy(newElems, elems, sizeOfElems*sizeof(ElemType));
 	delete []elems;
 	elems=newElems;
 	sizeOfAllocatedMemory=newSizeOfAllocatedMemory;
@@ -45,7 +47,7 @@ void ArrayList::add( int index, ElemType e )
 {
 	if(index>sizeOfElems||index<0)
 	{
-		throw "Index out of bounds!";
+		throw runtime_error("Index out of bounds!");
 	}
 	int newSizeOfArray=sizeOfElems+1;
 	if(sizeOfAllocatedMemory<newSizeOfArray)
@@ -68,11 +70,11 @@ void ArrayList::remove( int index )
 	int newSizeOfElems=sizeOfElems-1;
 	if(index>newSizeOfElems||index<0)
 	{
-		throw "index out of bounds!";;
+		throw runtime_error("index out of bounds!");
 	}
 	if(sizeOfElems==0)
 	{
-		throw "There is no element to remove!";
+		throw runtime_error("There is no element to remove!");
 	}
 	for(int i=index;i<newSizeOfElems;i++)
 	{
@@ -92,7 +94,7 @@ ElemType& ArrayList::operator[]( int index )
 {
 	if(index>sizeOfElems-1||index<0)
 	{
-		throw "Index out of bounds";;
+		throw runtime_error("Index out of bounds");
 	}
 	return elems[index];
 }
@@ -102,8 +104,9 @@ ArrayList& ArrayList::operator=( const ArrayList&list )
 	elems=new ElemType[list.sizeOfAllocatedMemory];
 	sizeOfAllocatedMemory=list.sizeOfAllocatedMemory;
 	sizeOfElems=list.sizeOfElems;
-	for(int i=0;i<list.sizeOfElems;i++)
-		elems[i]=list.elems[i];
+	/*for(int i=0;i<list.sizeOfElems;i++)
+		elems[i]=list.elems[i];*/
+    memcpy(elems, list.elems, list.sizeOfElems*sizeof(ElemType));
 	return *this;
 }
 ostream&operator<<(ostream&os,const ArrayList& list)
